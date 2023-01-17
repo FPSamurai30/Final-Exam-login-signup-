@@ -14,7 +14,7 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
     if (username === "admin" && password === "password") {
       redirectToYoutube();
     } else {
-      alert("Invalid credentials. Please try again.");
+      alert("Invalid credentials. Please try again, or you can use the username (admin) and password (password)");
     }
   }
   
