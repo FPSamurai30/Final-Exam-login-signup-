@@ -41,48 +41,8 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
   
   function submitSignupForm() {
     event.preventDefault();
-    // Get the form data
-    var username = document.getElementById("username-input").value;
-    var email = document.getElementById("email-input").value;
-    var password = document.getElementById("password-input").value;
-
-    // Validate the form data
-    if (!username || !email || !password) {
-        alert("Please fill in all the fields.");
-        return;
-    }
-
-    // Encrypt the password
-    var encryptedPassword = encrypt(password);
-
-    // Prepare the data to be sent to GitHub
-    var data = {
-        "username": username,
-        "email": email,
-        "password": encryptedPassword
-    };
-
-    // Send the data to GitHub
-    fetch("https://github.com/finalexam_1st_sem_ads1wst", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    })
-    .then(function(response) {
-        if (!response.ok) {
-            throw Error(response.statusText);
-        }
-        return response.json();
-    })
-    .then(function(data) {
-        console.log("Data uploaded successfully to GitHub.");
-    })
-    .catch(function(error) {
-        console.log("Error uploading data to GitHub: " + error);
-    });
-}
-  
+    var redirect_url = 'https://github.com/join';
+    window.location = redirect_url;
+  }
   
   
