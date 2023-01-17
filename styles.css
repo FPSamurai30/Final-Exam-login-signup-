@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e6ecf0;
+}
+
+#login-form, #signup-form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+#login-form h1, #signup-form h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1da1f2;
+}
+
+#login-form label, #signup-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"],
+#signup-form input[type="text"],
+#signup-form input[type="password"],
+#signup-form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#login-form input[type="text"]::placeholder,
+#login-form input[type="password"]::placeholder,
+#signup-form input[type="text"]::placeholder,
+#signup-form input[type="password"]::placeholder,
+#signup-form input[type="email"]::placeholder {
+  color: #a9a9a9;
+}
+
+#login-form input[type="submit"], #signup-form input[type="submit"] {
+  background-color: #1da1f2;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#switch-form {
+  text-align: center;
+  margin-top: 10px;
+  color: #1da1f2;
+  cursor: pointer;
+}
+.bold-underline {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #1da1f2;
+}
